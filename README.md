@@ -21,7 +21,7 @@
 <h3>1. Clone the Repository</h3>
 
 <pre>
-git clone https://github.com/your-username/ecomm.git
+git clone https://github.com/saurabhranjan007/Ecomm.git
 cd ecomm
 </pre>
 
@@ -71,13 +71,15 @@ PORT=3001</code>
 
 <pre>
 <code>cd backend
+npm install --s --f 
 npm start</code>
 </pre>
 
 <h4>Start the Frontend</h4>
-
+s
 <pre>
 <code>cd frontend
+npm install --s --f 
 npm start</code>
 </pre>
 

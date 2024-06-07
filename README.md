@@ -1,38 +1,20 @@
 <h1>E-Commerce Application</h1>
 
-<p>This is a full-stack e-commerce application with a Node.js backend and a React frontend. The backend connects to a MySQL database.</p>
+<p>
+    This is a full-stack application with Node.js handling the backend and React.js managing the frontend. For the database management, the backend connects to a MySQL database.
+</p>
 
 <h2>Prerequisites</h2>
 
 <p>Before you start, make sure you have the following installed on your machine:</p>
 
 <ul>
-  <li><a href="https://nodejs.org/">Node.js</a> (which includes npm)</li>
-  <li><a href="https://www.mysql.com/">MySQL</a></li>
-  <li><a href="https://www.gnu.org/software/make/">Make</a> (optional, but recommended for easier command management)</li>
+    <li><a href="https://nodejs.org/">Node.js</a> (includes npm)</li>
+    <li><a href="https://www.mysql.com/">MySQL</a></li>
+    <li><a href="https://www.gnu.org/software/make/">Make</a> 
+        (optional, but recommended for easier command navigation)
+    </li>
 </ul>
-
-<h2>Project Structure</h2>
-
-<pre>
-Ecomm/
-├── backend/
-│   ├── node_modules/
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── server.js
-│   ├── .env
-│   └── ... other backend files
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   ├── src/
-│   ├── package.json
-│   ├── package-lock.json
-│   └── ... other frontend files
-├── Makefile
-└── README.md
-</pre>
 
 <h2>Setup</h2>
 
@@ -51,8 +33,8 @@ cd ecomm
 <code># backend/.env
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=yourdatabase
+DB_PASSWORD=password
+DB_NAME=database_name
 PORT=3001</code>
 </pre>
 
@@ -108,24 +90,3 @@ npm start</code>
 </pre>
 
 <p>The frontend will proxy API requests to the backend running at <code>http://localhost:3001</code>.</p>
-
-<h2>Additional Notes</h2>
-
-<ul>
-  <li><strong>Database Setup</strong>: Ensure your MySQL database is set up and running. You might need to create the database and tables required by the application.</li>
-  <li><strong>Environment Variables</strong>: For production, make sure to configure environment variables properly and secure sensitive data.</li>
-  <li><strong>Platform Checks</strong>: The Makefile includes checks for the operating system to handle MySQL service accordingly. Adjust commands as needed for your specific environment.</li>
-  <li><strong>Proxy Configuration</strong>: The React frontend is configured to proxy API requests to the backend. This setup is specified in the <code>frontend/package.json</code> file.</li>
-</ul>
-
-<h2>Troubleshooting</h2>
-
-<ul>
-  <li><strong>MySQL Connection Issues</strong>: Ensure your MySQL service is running and credentials in the <code>.env</code> file are correct.</li>
-  <li><strong>Port Conflicts</strong>: Make sure the ports 3000 (frontend) and 3001 (backend) are not being used by other applications.</li>
-  <li><strong>Dependency Issues</strong>: Run <code>npm install</code> in both <code>backend</code> and <code>frontend</code> directories if dependencies are missing.</li>
-</ul>
-
-<h2>License</h2>
-
-<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>

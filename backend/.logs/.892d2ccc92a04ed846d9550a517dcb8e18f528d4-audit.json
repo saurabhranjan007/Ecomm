@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/signalzero/Documents/Assignment/Ecomm/backend/.logs/.892d2ccc92a04ed846d9550a517dcb8e18f528d4-audit.json",
+    "files": [
+        {
+            "date": 1717864481799,
+            "name": "/home/signalzero/Documents/Assignment/Ecomm/backend/.logs/app-2024-06-08.log",
+            "hash": "3d8e5ef5cf634beb70565aa504e710aa4286004a053a0bb5732eb23363078493"
+        }
+    ],
+    "hashType": "sha256"
+}
